@@ -1,0 +1,59 @@
+#:kivy 1.0.9
+
+<FretBoard>:
+    canvas.before:
+
+        Color:
+            rgba: (1, 1, 1, 1)
+        Rectangle:
+            #source:'C:/pyprojects/touchscreen/images/wood.jpg'
+            source:'images/wood.jpg'
+            size: root.width, root.height
+            pos: self.pos
+
+        Rectangle:
+            pos: (self.width / 19), (self.center_y / 6.9)
+            size: 10, (root.height / 1.16)
+
+        Rectangle:
+            pos: 5 * (self.width / 19), (self.center_y / 6.9)
+            size: 10, (self.height / 1.16)
+
+        Rectangle:
+            pos: 9 * (self.width / 19), (self.center_y / 6.9)
+            size: 10, (self.height / 1.16)
+
+        Rectangle:
+            pos: 13 * (self.width / 19), (self.center_y / 6.9)
+            size: 10, (self.height / 1.16)
+
+        Rectangle:
+            pos: 17 * (self.width / 19), (self.center_y / 6.9)
+            size: 10, (self.height / 1.16)
+
+        Rectangle:
+            pos: root.x, 1 * self.height / 14
+            size: self.width, 5
+
+        Rectangle:
+            pos: root.x, 5 * (self.height / 14)
+            size: self.width, 5
+
+        Rectangle:
+            pos: root.x, 9 * (self.height / 14)
+            size: self.width, 5
+
+        Rectangle:
+            pos: root.x, 13 * (self.height / 14)
+            size: self.width, 5
+
+    #BoxLayout:
+    #    padding: '10dp'
+    #    spacing: '10dp'
+    #    size_hint: 1, None
+    #    pos_hint: {'top': 1}
+    #    height: '44dp'
+
+
+
+
